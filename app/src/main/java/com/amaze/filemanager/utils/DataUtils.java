@@ -174,7 +174,7 @@ public class DataUtils {
     if (b == null) return -1;
     int i = 0;
     for (String[] x : b) {
-      if (x[0].equals(a[0]) && x[1].equals(a[1])) return i;
+      if (x[0].equals(a[0]) || x[1].equals(a[1])) return i;
       i++;
     }
     return -1;
